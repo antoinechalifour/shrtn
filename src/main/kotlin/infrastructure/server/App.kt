@@ -1,7 +1,7 @@
-package fr.antoinechalifour.shrtn.server
+package infrastructure.server
 
-import fr.antoinechalifour.shrtn.AppContext
-import fr.antoinechalifour.shrtn.server.routes.addSRoutes
+import config.AppContext
+import infrastructure.server.routes.addSRoutes
 import io.javalin.Javalin
 
 class App(private val port: Int, private val appContext: AppContext) {

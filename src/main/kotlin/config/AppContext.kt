@@ -1,8 +1,8 @@
-package fr.antoinechalifour.shrtn
+package config
 
-import fr.antoinechalifour.shrtn.domain.repository.LinkRepository
-import fr.antoinechalifour.shrtn.domain.usecase.GetBaseUrl
-import fr.antoinechalifour.shrtn.domain.usecase.ShortenUrl
+import domain.repository.LinkRepository
+import domain.usecase.GetBaseUrl
+import domain.usecase.ShortenUrl
 
 
 data class AppContextRepositories(val linkRepository: LinkRepository)

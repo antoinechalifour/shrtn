@@ -1,3 +1,3 @@
-package fr.antoinechalifour.shrtn.domain.model
+package domain.model
 
 data class Link(val url: String, val shortUrl: String)

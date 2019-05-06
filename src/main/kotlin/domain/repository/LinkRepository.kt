@@ -1,6 +1,6 @@
-package fr.antoinechalifour.shrtn.domain.repository
+package domain.repository
 
-import fr.antoinechalifour.shrtn.domain.model.Link
+import domain.model.Link
 
 interface LinkRepository {
     fun persist(link: Link)

@@ -1,6 +1,6 @@
-package fr.antoinechalifour.shrtn.server.routes
+package infrastructure.server.routes
 
-import fr.antoinechalifour.shrtn.AppContext
+import config.AppContext
 import io.javalin.Javalin
 import io.javalin.apibuilder.ApiBuilder.*
 

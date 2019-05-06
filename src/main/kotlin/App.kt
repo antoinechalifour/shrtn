@@ -1,9 +1,11 @@
-package fr.antoinechalifour.shrtn
-
-import fr.antoinechalifour.shrtn.domain.usecase.GetBaseUrl
-import fr.antoinechalifour.shrtn.domain.usecase.ShortenUrl
-import fr.antoinechalifour.shrtn.infrastructure.repository.LinkRepositoryInMemory
-import fr.antoinechalifour.shrtn.server.App
+import config.AppConfig
+import config.AppContext
+import config.AppContextRepositories
+import config.AppContextUseCases
+import domain.usecase.GetBaseUrl
+import domain.usecase.ShortenUrl
+import infrastructure.repository.LinkRepositoryInMemory
+import infrastructure.server.App
 
 
 val linkRepository = LinkRepositoryInMemory()

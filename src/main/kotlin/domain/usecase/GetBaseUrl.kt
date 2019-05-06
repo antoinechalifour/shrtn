@@ -1,9 +1,9 @@
-package fr.antoinechalifour.shrtn.domain.usecase
+package domain.usecase
 
-import fr.antoinechalifour.shrtn.AppConfig
-import fr.antoinechalifour.shrtn.domain.helpers.getShortUrl
-import fr.antoinechalifour.shrtn.domain.model.Link
-import fr.antoinechalifour.shrtn.domain.repository.LinkRepository
+import config.AppConfig
+import domain.helpers.getShortUrl
+import domain.model.Link
+import domain.repository.LinkRepository
 import io.javalin.NotFoundResponse
 
 class GetBaseUrl(private val linkRepository: LinkRepository, private val config: AppConfig) {

@@ -1,7 +1,7 @@
-package fr.antoinechalifour.shrtn.infrastructure.repository
+package infrastructure.repository
 
-import fr.antoinechalifour.shrtn.domain.model.Link
-import fr.antoinechalifour.shrtn.domain.repository.LinkRepository
+import domain.model.Link
+import domain.repository.LinkRepository
 
 class LinkRepositoryInMemory : LinkRepository {
     companion object {
