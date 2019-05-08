@@ -10,9 +10,9 @@ import infrastructure.server.App
 
 val linkRepository = LinkRepositoryInMemory()
 val appConfig = AppConfig(
-    protocol = "http",
-    host = "localhost",
-    port = 8000
+    protocol = System.getenv("SERVER_PROTOCOL") ?: "http",
+    host = System.getenv("SERVER_HOST") ?: "localhost",
+    port = System.getenv("PORT") as Int? ?: 8000
 )
 
 val appContext = AppContext(
