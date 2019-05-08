@@ -11,7 +11,6 @@ class GetBaseUrl(private val linkRepository: LinkRepository, private val config:
         val shortUrl = getShortUrl(
             protocol = config.protocol,
             host = config.host,
-            port = config.port,
             shortUrl = id
         )
 

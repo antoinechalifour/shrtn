@@ -19,7 +19,7 @@ class GetBaseUrlTest {
         linkRepository = LinkRepositoryInMemory()
         config = AppConfig(
             protocol = "http",
-            host = "localhost",
+            host = "shrtn.co",
             port = 8000
         )
     }
@@ -27,7 +27,7 @@ class GetBaseUrlTest {
     @Test
     fun `returns the link when found`() {
         // Given
-        val link = Link("http://example.com/yes", "http://localhost:8000/s/short")
+        val link = Link("http://example.com/yes", "http://shrtn.co/s/short")
         linkRepository.persist(link)
         val getBaseUrl = GetBaseUrl(linkRepository, config)
 

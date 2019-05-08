@@ -11,7 +11,6 @@ class ShortenUrl(private val linkRepository: LinkRepository, private val config:
         val linkShortId = UUID.randomUUID().toString()
         val shortUrl = getShortUrl(
             protocol = config.protocol,
-            port = config.port,
             host = config.host,
             shortUrl = linkShortId
         )

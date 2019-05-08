@@ -12,7 +12,7 @@ val linkRepository = LinkRepositoryInMemory()
 val appConfig = AppConfig(
     protocol = System.getenv("SERVER_PROTOCOL") ?: "http",
     host = System.getenv("SERVER_HOST") ?: "localhost",
-    port = System.getenv("PORT") as Int? ?: 8000
+    port = System.getenv("PORT")?.toInt() ?: 8000
 )
 
 val appContext = AppContext(

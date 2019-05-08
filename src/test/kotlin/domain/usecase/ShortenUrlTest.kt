@@ -16,7 +16,7 @@ class ShortenUrlTest {
         linkRepository = LinkRepositoryInMemory()
         config = AppConfig(
             protocol = "http",
-            host = "localhost",
+            host = "shrtn.co",
             port = 8000
         )
     }
@@ -37,6 +37,6 @@ class ShortenUrlTest {
 
         assertThat(result).isNotNull()
         assertThat(result.url).isEqualTo("http://example.com/test")
-        assertThat(result.shortUrl).matches("http://localhost:8000/s/(.*)")
+        assertThat(result.shortUrl).matches("http://shrtn.co/s/(.*)")
     }
 }
